@@ -48,22 +48,5 @@ types:
        body:
          application/json:
            example: {
-             "id": "5f7486a192ea33fe3e2f08b9",
-             "status": "pending"
+             "answer": "Message from ChatGPT"
            }
- /{id}:
-   get:
-     description: Returns the status of the notification
-     queryParameters:
-       details:
-         description: By default, only the status of the notification is returned. For complete information, include ?details=true
-         type: boolean
-         required: false
-         default: false
-     responses:
-       200:
-         body:
-           application/json:
-             example: { "status": "pending" }
-       404:
-         description: Notification does not exist

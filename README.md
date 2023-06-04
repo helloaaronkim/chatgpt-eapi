@@ -1,2 +1,7 @@
 # ChatGPT Experience API
-## Tech stack : 
+Tech stack : OpenAI connector based on ChatGTP API
+
+## Usage
+```
+TBU
+```

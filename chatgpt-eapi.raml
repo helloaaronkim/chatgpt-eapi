@@ -3,23 +3,10 @@ title: chatgpt-eapi
 description: ChatGTP API with OpenAI Connector
 
 types:
- Notification:
+ Query:
    type: object
    properties:
-     id?:
-       type: string
-     priority:
-       enum:
-         - High
-         - Standard
-         - Log
-     groupId: string | number
      message: string
-     status?:
-       enum:
-         - pending
-         - complete
-         - failed
         
 /query:
 #  get:
@@ -51,7 +38,7 @@ types:
    description: Query to ChatGPT
    body:
      application/json:
-       type: Notification
+       type: Query
        example:
          message: This is a test notification
          priority: Standard
